@@ -1,0 +1,21 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    animation: test 5s;
+}
+
+.menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out
+}
+
+.menu a:hover{
+    color: #007BFF;
+    transition: color 0.3s ease-in-out;
+}

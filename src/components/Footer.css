@@ -1,0 +1,14 @@
+.Footer {
+    background-color: #212121;
+    color: white;
+    padding: 20px;
+    width: 100%; 
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.Footer h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #f8f8f8;
+}
