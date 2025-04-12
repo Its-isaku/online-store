@@ -1,3 +1,11 @@
-.main-content {
-    min-height: calc(100vh - 131.904px);
+.catalog-content {
+    
+    min-height: calc(100vh - 163.904px);
+}
+
+.catalog-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

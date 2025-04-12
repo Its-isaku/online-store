@@ -4,7 +4,7 @@
     justify-content: center;
     gap: 2rem;
     align-items: center;
-    animation: test 5s;
+    padding: 1rem 0;
 }
 
 .menu a{
