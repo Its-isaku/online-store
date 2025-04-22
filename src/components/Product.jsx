@@ -1,10 +1,9 @@
 //? imports
-import { useState } from "react";
 import "./Product.css";
 import QuantityPicker from "./QuantityPicker";
 
 
-function Product() {
+function Product(props) {
     //? variables
     
 
@@ -15,14 +14,20 @@ function Product() {
     return(
         <>
             <div className='product'>
-                <img src="https://picsum.photos/200/300" alt="img" />
+                <img src={props.data.image} alt="img" />
                 
-                <h3>Product Title</h3>
+                <div className="productInfo">
+                    <h3>{props.data.title}</h3>
+                    
+                    <div>
+                        <label> Price: <small>${props.data.price.toFixed(2)}</small></label>
+                    </div>
+                </div>
 
                 <div className="product-actions">
                 <QuantityPicker></QuantityPicker>
 
-                    <button>add to <i class="fa-solid fa-cart-shopping"></i></button>
+                    <button>add to <i className="fa-solid fa-cart-shopping"></i></button>
                 </div>
             </div>
         </>  

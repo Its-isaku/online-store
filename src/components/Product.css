@@ -35,7 +35,7 @@ button:focus {
 .product{
     border-radius: 1rem;
     width: 250px;
-    height: 320px;
+    height: auto;
     margin: 1rem;
     background-color: #f9f9f9;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -69,4 +69,32 @@ button:focus {
 
 .product-actions button:hover {
     transform: scale(1.05);
+}
+
+.productInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.productInfo small {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+@media (max-width: 600px) {
+    .product {
+    width: 95vw;
+    margin: 0.5rem auto;
+    }
+    .product img {
+    height: 150px;
+    }
+    .product-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+    }
 }

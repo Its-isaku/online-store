@@ -19,3 +19,14 @@
     color: #007BFF;
     transition: color 0.3s ease-in-out;
 }
+
+@media (max-width: 700px) {
+    .menu {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    }
+    .menu a {
+    font-size: 1rem;
+    }
+}

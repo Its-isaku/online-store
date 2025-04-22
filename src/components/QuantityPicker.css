@@ -1,10 +1,21 @@
-.QuantutyPicker {
+.QuantityPicker {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.QuantutyPicker button {
+.QuantityPicker button {
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 600px) {
+    .QuantityPicker label {
+    font-size: 1rem;
+    }
+    .QuantityPicker button {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+    }
 }

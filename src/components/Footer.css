@@ -12,3 +12,10 @@
     font-size: 1.2rem;
     color: #f8f8f8;
 }
+
+@media (max-width: 600px) {
+    .Footer {
+    font-size: 0.9rem;
+    padding: 10px;
+    }
+}
