@@ -19,13 +19,14 @@ function Product(props) {
                 <div className="productInfo">
                     <h3>{props.data.title}</h3>
                     
+                    <label> Category: {props.data.category}</label>
                     <div>
                         <label> Price: <small>${props.data.price.toFixed(2)}</small></label>
                     </div>
                 </div>
 
                 <div className="product-actions">
-                <QuantityPicker></QuantityPicker>
+                <QuantityPicker/>
 
                     <button>add to <i className="fa-solid fa-cart-shopping"></i></button>
                 </div>

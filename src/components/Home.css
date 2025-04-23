@@ -1,0 +1,111 @@
+.Home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Home-content img {
+    width: 600px;
+    max-width: 90vw;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.HomeInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    gap: 1.5rem;
+}   
+
+.HomeText{
+    text-align: left;
+}
+
+.HomeCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.HomeHighlights,
+.HomeTestimonial,
+.HomeHours {
+    background: #e9fdcf;
+    border-radius: 0.75rem;
+    padding: 1.5rem 1.25rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    min-width: 220px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 0;
+}
+
+.HomeSectionsRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.HomeHighlights h3,
+.HomeTestimonial h3,
+.HomeHours h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #4b6c2a;
+}
+
+.HomeHighlights ul,
+.HomeHours ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.HomeHighlights li,
+.HomeHours li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #35511b;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.HomeTestimonial {
+    border-left: 5px solid #b7e08a;
+    max-width: 300px;
+}
+
+.HomeTestimonial blockquote {
+    margin: 0;
+    font-style: italic;
+    color: #6d6d6d;
+    font-size: 1.05rem;
+}
+
+.HomeTestimonial span {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #4b6c2a;
+}
+
+.HomeHours {
+    max-width: 300px;
+}

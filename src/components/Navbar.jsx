@@ -9,10 +9,10 @@ function Navbar() {
     return(
         <>
             <div className="menu">
-                <a href="">Log in</a>
+                <a href="">Home</a>
+                <a href="">Catalog</a>
                 <a href="">About</a>
-                <a href="">Subscribe</a>
-                <a href="">Menu</a>
+                <a href="">Contact</a>
             </div>
         </>  
     );

@@ -4,22 +4,27 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/footer"
 import Catalog from "./components/Catalog"
 import About from './components/about'
+import Home from './components/Home'
 
 //? App component
 function App() {
   //? variables
 
+  //? functions
+
   //? return
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar/>
 
       <div className="main-content">
-        <Catalog></Catalog>
-        <About></About>
+        <Home/>
+        <Catalog/>
+        <About/>
+        {/* <Contact></Contact>  */}
       </div>
       
-      <Footer></Footer>
+      <Footer/>
     </>
   )
 }

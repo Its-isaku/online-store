@@ -1,5 +1,6 @@
 //? imports
-import mockCatalog from "../services/dataService";
+import { useState } from "react";
+import {mockCatalog, mockCategory} from "../services/dataService";
 import "./Catalog.css";
 import Product from "./product";
 
@@ -7,28 +8,26 @@ import Product from "./product";
 
 function Catalog() {
     //? variables
-
+    const [filter, setFilter] = useState('');
 
     //? return
-    return(
+    return (
         <>
             <div className='catalog-content'>
                 <h1>Take a look to our catalog!</h1>
 
+                {/* //? filters */}
+                <div className="filters">
+                    <button className="allBtn" onClick={() => setFilter('')}>All</button>
+                    {mockCategory.map((cat => <button onClick={() => setFilter(cat)}>{cat}</button>))}
+                </div>
+
+                {/* //? Items */}
                 <div className="catalog-list">
-                <Product data={mockCatalog[0]}></Product>
-                <Product data={mockCatalog[1]}></Product>
-                <Product data={mockCatalog[2]}></Product>
-                <Product data={mockCatalog[3]}></Product>
-                <Product data={mockCatalog[4]}></Product>
-                <Product data={mockCatalog[5]}></Product>
-                <Product data={mockCatalog[6]}></Product>
-                <Product data={mockCatalog[7]}></Product>
-                <Product data={mockCatalog[8]}></Product>
-                <Product data={mockCatalog[9]}></Product>
+                    {mockCatalog.filter(item => item.category === filter || !filter).map(item => <Product data={item} />)}
                 </div>
             </div>
-        </>  
+        </>
     );
 }
 
