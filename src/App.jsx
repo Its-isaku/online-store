@@ -5,6 +5,9 @@ import Footer from "./components/footer"
 import Catalog from "./components/Catalog"
 import About from './components/about'
 import Home from './components/Home'
+import Admin from './components/Admin'
+import { BrowserRouter, Routes, Route } from  'react-router-dom';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 //? App component
 function App() {
@@ -14,31 +17,22 @@ function App() {
 
   //? return
   return (
-    <>
-      <Navbar/>
+    <BrowserRouter>
+      <Navbar />
+      <div className='main-content'>
 
-      <div className="main-content">
-        <Home/>
-        <Catalog/>
-        <About/>
-        {/* <Contact></Contact>  */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+
       </div>
-      
-      <Footer/>
-    </>
+      <Footer />
+    </BrowserRouter>
   )
 }
 
 export default App
-
-/**  
- * TODO
-
-*? Create a Home Page 
-**  Render Home page above the Catalog Page
-
-*?Home Page should contain:  
-**  - Image
-**  - Text
-**  - etc
- */

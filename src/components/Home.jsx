@@ -1,5 +1,6 @@
 //? imports
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
     //? variables
@@ -27,6 +28,7 @@ function Home() {
                         <p>
                             At Chipis Farm Market, we believe in sustainable farming practices and supporting our community. We work closely with local farmers to ensure that our products are grown and harvested with care. Our farm market is a place where you can find fresh, seasonal produce, as well as a selection of meats and dairy products that are free from hormones and antibiotics.
                         </p>
+                        <Link className="linkBtn" to="/catalog">Check out our amazing Catalog <i className="fa-solid fa-arrow-right nextIcon"></i></Link>
                     </div>
 
                 </div>

@@ -1,0 +1,35 @@
+.discount-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.discount-form div {
+    width: 100%;
+    margin-bottom: 12px;
+    height: 150px;
+}
+
+.discount-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 1rem;
+    gap: 0.5rem;
+    border: 1px solid #333333;
+    border-radius: 0.5rem;
+}
+
+.discount-form label {
+    font-size: 1.2rem;
+    color: #333333;
+    align-items: left;
+}
+.discount-form input {
+    width: 100%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #333333;
+    background-color: #fff;
+    font-size: 1rem;
+}

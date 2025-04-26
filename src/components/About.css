@@ -1,3 +1,7 @@
+.aboutContent{
+    min-height: calc(100vh - 130px);
+}
+
 .aboutContent img{
     border-radius: 1rem;
     width: 900px;
