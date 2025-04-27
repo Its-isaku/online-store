@@ -1,21 +1,59 @@
-.Footer {
-    background-color: #212121;
-    color: white;
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333;
+    color: #FDFAF6;
     padding: 20px;
-    width: 100%; 
     text-align: center;
-    box-sizing: border-box;
 }
 
-.Footer h2 {
-    margin: 0;
+.section1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 90%;
+    border-bottom: #3f4b52 solid 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 500px;
+}
+
+.QuickLinks{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.QuickLinks a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
     font-size: 1.2rem;
-    color: #f8f8f8;
+    transition: color 0.3s ease-in-out;;
 }
 
-@media (max-width: 600px) {
-    .Footer {
-    font-size: 0.9rem;
-    padding: 10px;
-    }
+.QuickLinks a:hover{
+    color: #84af74;
+    transition: color 0.3s ease-in-out;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 500px;
+}
+
+.Copyright{
+    height: 40px;
 }

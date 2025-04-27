@@ -6,6 +6,7 @@ import Catalog from "./components/Catalog"
 import About from './components/about'
 import Home from './components/Home'
 import Admin from './components/Admin'
+import Contact from './components/contact'
 import { BrowserRouter, Routes, Route } from  'react-router-dom';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>
 

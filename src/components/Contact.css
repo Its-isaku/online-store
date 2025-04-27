@@ -1,0 +1,97 @@
+body {
+    overflow-x: hidden;
+}
+
+.ContactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    background-color: #e9fdcf;
+}
+
+.contactUsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+}
+
+.contactUsContainer h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #84af74;
+}
+
+.ContactCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-bottom: 0.3rem;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card p{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.card i{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.Phone{
+    color: #84af74;
+}
+
+.Email{
+    color: #d58e74;
+    border-top: 10px solid #d58e74;
+}
+
+.Address{
+    color: #84af74;
+}

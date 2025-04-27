@@ -1,6 +1,20 @@
 .catalog-content {
-    
     min-height: calc(100vh - 163.904px);
+}
+
+.catalogTitleContainer{
+    background-color: #e9fdcf;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.catalogTitleInfo{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.catalogTitleInfo h1{
+    color: #58861d;
 }
 
 .catalog-list {
@@ -18,6 +32,10 @@
     justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+.productInfo{
+    border-bottom: #afa9a9 solid 1px;
 }
 
 .allBtn{

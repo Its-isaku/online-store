@@ -14,17 +14,22 @@ function Catalog() {
     return (
         <>
             <div className='catalog-content'>
-                <h1>Take a look to our catalog!</h1>
+                <div className="catalogTitleContainer">
+                    <div className="catalogTitleInfo">
+                        <h1>Our Products</h1>
+                        <p>Browse through our selection of fresh, locally-sourced products. We pride ourselves on quality and sustainability.</p>
+                    </div>
+                </div>
 
                 {/* //? filters */}
                 <div className="filters">
                     <button className="allBtn" onClick={() => setFilter('')}>All</button>
-                    {mockCategory.map((cat => <button onClick={() => setFilter(cat)}>{cat}</button>))}
+                    {mockCategory.map((cat => <button key={cat} onClick={() => setFilter(cat)}>{cat}</button>))}
                 </div>
 
                 {/* //? Items */}
                 <div className="catalog-list">
-                    {mockCatalog.filter(item => item.category === filter || !filter).map(item => <Product data={item} />)}
+                    {mockCatalog.filter(item => item.category === filter || !filter).map(item => <Product key={Product._id} data={item} />)}
                 </div>
             </div>
         </>

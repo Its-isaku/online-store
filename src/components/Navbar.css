@@ -1,3 +1,35 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navTitle a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navTitle h1 {
+    font-size: 2rem;
+    color: #84af74;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.cartLogo i{
+    font-size: 1.5rem;
+    color: #84af74;
+}
+
 .menu{
     display: flex;
     flex-direction: row;
@@ -16,7 +48,7 @@
 }
 
 .menu a:hover{
-    color: #007BFF;
+    color: #84af74;
     transition: color 0.3s ease-in-out;
 }
 

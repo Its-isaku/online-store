@@ -6,11 +6,11 @@ import AdminProducts from "./AdminProducts";
 function Admin() {
 
     return (
-        <div className="admin-container">
-            <h2 className="admin-title">Chipis Farm Market - Admin Panel</h2>
-            <p className="admin-description">
-                Manage your farm-fresh organic products and check your market status.
-            </p>
+        <div className="adminContainer">
+            <div className="InfoContainer">
+                <h1>Chipis Farm Market - Admin Panel</h1>
+                <p>Manage your farm-fresh organic products and check your market status.</p>
+            </div>
 
             <div className="adminContent">
                 <AdminProducts />

@@ -10,27 +10,29 @@ function Home() {
     return (
         <>
             <div className='Home-content'>
-                <h1>Welcome to Chipis Farm Market</h1>
+                <div className="HomeInfo"> 
+                    <div className="HomeContainer">
+                        <div>
+                            <img
+                                src="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2021/08/farmers-market-produce-0812211.jpg"
+                                alt="farm-img"
+                                className="HomeImage"
+                                />
+                        </div>
 
-                <div className="HomeInfo">
-                    <img
-                        src="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2021/08/farmers-market-produce-0812211.jpg"
-                        alt="farm-img"
-                        className="HomeImage"
-                    />
+                        <div className="HomeText">
+                            <h1>Welcome to Chipis Farm Market</h1>
+                            <h2>Fresh, Local, and Sustainable</h2>
+                            <p>
+                                We are a family owned farm market located in the heart of the countryside. We offer a wide variety of fresh produce, meats, and dairy products sourced from local farms. Our mission is to provide our customers with the freshest and highest quality products while supporting our local farmers.
+                            </p>
 
-                    <div className="HomeText">
-                        <h2>Fresh, Local, and Sustainable</h2>
-                        <p>
-                            We are a family owned farm market located in the heart of the countryside. We offer a wide variety of fresh produce, meats, and dairy products sourced from local farms. Our mission is to provide our customers with the freshest and highest quality products while supporting our local farmers.
-                        </p>
-
-                        <p>
-                            At Chipis Farm Market, we believe in sustainable farming practices and supporting our community. We work closely with local farmers to ensure that our products are grown and harvested with care. Our farm market is a place where you can find fresh, seasonal produce, as well as a selection of meats and dairy products that are free from hormones and antibiotics.
-                        </p>
-                        <Link className="linkBtn" to="/catalog">Check out our amazing Catalog <i className="fa-solid fa-arrow-right nextIcon"></i></Link>
+                            <p>
+                                At Chipis Farm Market, we believe in sustainable farming practices and supporting our community. We work closely with local farmers to ensure that our products are grown and harvested with care. Our farm market is a place where you can find fresh, seasonal produce, as well as a selection of meats and dairy products that are free from hormones and antibiotics.
+                            </p>
+                            <Link className="linkBtn" to="/catalog">Check out our amazing Catalog <i className="fa-solid fa-arrow-right nextIcon"></i></Link>
+                        </div>
                     </div>
-
                 </div>
 
                 <div className="HomeCards">
