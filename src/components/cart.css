@@ -1,0 +1,254 @@
+.cartTitleContainer{
+    background-color: #e9fdcf;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.cartTitleInfo{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.cartTitleInfo h1{
+    color: #58861d;
+}
+
+.listHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.listHeader h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #22223b;
+}
+
+.clearCartBtn {
+    background: #fff;
+    color: #333333;
+    border: 1px solid #333333 !important;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    height: 50px;
+    width: 150px;
+}
+
+.clearCartBtn:hover {
+    background: #333333;
+    color: #fff;
+    border: none;
+}
+
+.mainCartContainer {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    margin: -4rem 4rem 0 4rem;
+    gap: 3rem;
+}
+
+.CartList {
+    width:100%;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.cart-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #22223b;
+    text-align: center;
+}
+
+.CartList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.cartItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    margin: 0 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.leftCartSide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cartprodInfo1 {
+    text-align: left !important;
+}
+
+.cartprodInfo1 h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #22223b;
+}
+
+.cartprodInfo1 p {
+    font-size: 1rem;
+    color: #767676;
+}
+
+.cartprodInfo1 label {
+    font-weight: 600;
+    color: #388e3c;
+}
+
+.cartprodInfo2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.cartTotal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.cartTotal label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #22223b;
+}
+
+.cartItem img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.RemoveBtn{
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.RemoveBtn:hover {
+    background: #ff4d4d;
+}
+
+.cartprodInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+}
+
+.cartprodInfo h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #22223b;
+}
+
+.cartprodInfo h3 {
+    font-size: 1rem;
+    color: #4a4e69;
+}
+
+.emptyCartMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.emptyCartMessage p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #22223b;
+}
+
+.emptyCartMessage i {
+    font-size: 5rem;
+    color: #388e3c;
+}
+
+.catalogMsg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #767676;
+}
+
+.catalogMsg a {
+    text-decoration: none;
+    color: #388e3c;
+    font-weight: 600;
+}
+
+.sideMenu{
+    width: 100%;
+    height: 600px;
+    position: sticky;
+    top: 2rem;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+.sideMenuHeader{
+    margin: 0 2rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.sideMenuHeader h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #22223b;
+    text-align: left;
+}
+
+.sideMenuContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.checkoutTotals{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}

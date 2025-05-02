@@ -44,7 +44,6 @@ function Home() {
                             <li>✔️ Seasonal specials and promotions</li>
                             <li>✔️ Commitment to sustainability</li>
                         </ul>
-                        <button>Shop Now</button>
                     </div>
 
                     <section className="HomeTestimonial">

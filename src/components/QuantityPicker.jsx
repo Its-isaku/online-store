@@ -1,18 +1,26 @@
 //? imports
+import { useState } from "react";
 import "./QuantityPicker.css";
 
 //? QuantityPicker component
-function QuantityPicker({ quantity, setQuantity }) {
+function QuantityPicker(props) {
+    //? variables
+    const [quantity, setQuantity] = useState(1);
+
     //? functions
     function increase(){
-        if(quantity < 9){
-            setQuantity(quantity + 1);
+        if(quantity < 15){
+            const val = quantity + 1;
+            setQuantity(val);
+            props.onChange(val);
         }
     }
 
     function decrease(){
         if(quantity > 1){
-            setQuantity(quantity - 1);
+            const val = quantity - 1;
+            setQuantity(val);
+            props.onChange(val);
         }
     }
 
@@ -22,7 +30,7 @@ function QuantityPicker({ quantity, setQuantity }) {
             <div className='QuantityPicker'>
                 <button disabled={quantity == 1} onClick={decrease}>-</button>
                 <label>{quantity}</label>
-                <button disabled={quantity == 9} onClick={increase}>+</button>
+                <button disabled={quantity == 15} onClick={increase}>+</button>
             </div>
         </>  
     );  
