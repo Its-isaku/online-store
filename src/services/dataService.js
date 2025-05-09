@@ -1,3 +1,6 @@
+import axios from 'axios';
+import Product from './../components/Product';
+
 export const mockCatalog = [
     {
         "title": "banana",
@@ -174,3 +177,30 @@ export const mockCategory = [
     "dairy",
     "meat",
 ];
+
+class DataService{
+
+    async getCatalog() {
+        let response = await axios.get("http://127.0.0.1:5000/api/products");
+        return response.data;
+
+        //? to run without the backend
+        // return mockCatalog;
+    }   
+
+    async getCategories() {
+        let response = await axios.get("http://127.0.0.1:5000/api/categories");
+        return response.data;
+
+        //? to run without the backend
+        // return mockCategory;
+    }
+
+    async saveProduct(Product) {
+        let response = await axios.post("http://127.0.0.1:5000/api/products", Product);
+        return response.data;
+    }
+
+}
+
+export default new DataService();

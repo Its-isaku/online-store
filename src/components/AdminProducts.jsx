@@ -1,6 +1,7 @@
 //? imports
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./AdminProducts.css";
+import dataService from "../services/dataService";
 
 function AdminProducts() {
     //? variables
@@ -11,6 +12,11 @@ function AdminProducts() {
         image: "",
         price: "",
     });
+
+    //? useEffect
+    useEffect(() => {
+        loadProducts();
+    }, []);
     
     //? functions 
     function handleInput(e) {
@@ -25,7 +31,7 @@ function AdminProducts() {
     }
 
 
-    function save(e) {
+    async function save(e) {
         e.preventDefault();
         const title = product.title.trim();
         const category = product.category;
@@ -52,9 +58,19 @@ function AdminProducts() {
         console.log("Product is valid");
         console.log({ title, category, image, price });
 
+        //? save product to the backend
+        let response = await dataService.saveProduct(product)
+        console.log(response);
+
         let copy = [...allProducts];
         copy.push(product);
         setAllProducts(copy);
+    }
+
+    async function loadProducts(){
+        let response = await dataService.getCatalog();
+        console.log(response);
+        setAllProducts(response);
     }
     
 
